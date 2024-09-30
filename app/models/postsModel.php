@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models\postsModel;
+namespace App\Models\PostsModel;
 
 use \PDO;
 
@@ -9,15 +9,14 @@ function findAll(PDO $connexion): array
 
     $sql = "SELECT *
             FROM posts
-            ORDER BY created_at DESC
-            LIMIT 3;";
+            ORDER BY created_at DESC;";
 
     return $connexion->query($sql)->fetchAll(PDO::FETCH_ASSOC);
 }
 
 function findOneById(PDO $connexion, $id): array
 {
-    $sql = "SELECT*
+    $sql = "SELECT *
            FROM posts
            WHERE id = :id;";
 
