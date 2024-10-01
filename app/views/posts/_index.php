@@ -11,7 +11,7 @@
     </a>
   </div>
   <div class="post-info">
-    <span><?php echo $post['created_at']; ?></span> | <span>xxx</span>
+    <span><?php echo $post['created_at']; ?></span> | <span><?php echo $post['category_name']; ?></span>
   </div>
   <p>
     <?php

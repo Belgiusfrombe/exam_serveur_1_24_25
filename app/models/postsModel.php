@@ -6,9 +6,9 @@ use \PDO;
 
 function findAll(PDO $connexion): array
 {
-
-    $sql = "SELECT *
+    $sql = "SELECT posts.*, categories.name AS category_name
             FROM posts
+            LEFT JOIN categories ON posts.category_id = categories.id
             ORDER BY created_at DESC
             LIMIT 10;";
 
@@ -17,9 +17,10 @@ function findAll(PDO $connexion): array
 
 function findOneById(PDO $connexion, $id): array
 {
-    $sql = "SELECT *
+    $sql = "SELECT posts.*, categories.name AS category_name
            FROM posts
-           WHERE id = :id;";
+           LEFT JOIN categories ON posts.category_id = categories.id
+           WHERE posts.id = :id;";
 
     $rs = $connexion->prepare($sql);
     $rs->bindValue(':id', $id, PDO::PARAM_INT);
