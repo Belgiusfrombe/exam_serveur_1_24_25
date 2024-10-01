@@ -5,5 +5,7 @@ if (isset($_GET['posts'])):
 
 else:
     include_once "../app/controllers/postsController.php";
+    include_once "../app/controllers/categoriesController.php";
     App\Controllers\PostsController\indexAction($connexion);
+    App\Controllers\CategoriesController\indexAction($connexion);
 endif;

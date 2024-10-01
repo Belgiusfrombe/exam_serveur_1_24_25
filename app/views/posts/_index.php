@@ -1,3 +1,4 @@
+
 <div>
   <a href="index.php?posts=createForm" type="button" class="btn btn-primary">Add a Post</a>
 </div>
@@ -11,7 +12,8 @@
     </a>
   </div>
   <div class="post-info">
-    <span><?php echo $post['created_at']; ?></span> | <span><?php echo $post['category_name']; ?></span>
+  <span><?php echo date('d-m-Y', strtotime($post['created_at'])); ?></span>
+ | <span><?php echo $post['category_name']; ?></span>
   </div>
   <p>
     <?php
@@ -22,7 +24,7 @@
     }
     ?>
   </p>
-  <a href="index.php?posts=show&id=<?php echo $post['id']; ?>" class="block button">
+  <a href="index.php?posts=show&id=<?php echo $post['id']; ?>" class="button button-style button-anim fa fa-long-arrow-right">
     <span>Read More</span>
   </a>
 </div>
