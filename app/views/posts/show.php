@@ -1,5 +1,5 @@
-<div class="col-md-9">
-    <div class="col-md-12 page-body">
+
+
         <div class="row">
             <div class="sub-title">
                 <a href="index.html" title="Go to Home Page">
@@ -49,7 +49,5 @@
                 </div>
             </div>
         </div>
-    </div>
-</div>
 <!-- Footer End -->
 </div>

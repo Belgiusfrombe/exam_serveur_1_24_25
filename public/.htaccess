@@ -14,7 +14,6 @@ RewriteRule ^posts/([0-9]+)/([a-zA-Z0-9_-]+)$ index.php?posts=show&id=$1 [L]
 # PATTERN: /posts/{id}/{slug}
 # URL: index.php?posts=show&id=xxx
 
-
 # -------------------
 
 RewriteCond %{REQUEST_URI} !\.(js|css|jpg|gif|zip|png|pdf)$ [NC]

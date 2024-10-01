@@ -29,3 +29,14 @@ function indexAction(PDO $connexion) {
     include "../app/views/posts/_index.php";
     $content = ob_get_clean();
 }
+
+function createFormAction(PDO $connexion) {
+    global $content, $title;
+    $title = "Create a New Post";
+
+    ob_start();
+    include "../app/views/form/index.php";
+    $content = ob_get_clean();
+}
+
+

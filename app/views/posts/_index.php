@@ -1,3 +1,6 @@
+<div>
+  <a href="index.php?posts=createForm" type="button" class="btn btn-primary">Add a Post</a>
+</div>
 <?php foreach ($posts as $post): ?>
 <div class="col-md-12 blog-post row">
   <div class="post-title">
@@ -21,7 +24,7 @@
   </p>
   <a href="index.php?posts=show&id=<?php echo $post['id']; ?>" class="block button">
     <span>Read More</span>
-</a>
+  </a>
 </div>
 <!-- Blog Post End -->
 <?php endforeach; ?>

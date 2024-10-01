@@ -22,10 +22,10 @@
     />
 
     <!-- All CSS Plugins -->
-    <link rel="stylesheet" type="text/css" href="css/plugin.css" />
+    <link rel="stylesheet" type="text/css" href="../public/css/plugin.css" />
 
     <!-- Main CSS Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../public/css/style.css" />
 
     <!-- Google Web Fonts  -->
     <link
