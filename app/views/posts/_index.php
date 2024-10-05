@@ -1,5 +1,6 @@
 
 <div>
+  <!-- Add Post button -->
   <a href="index.php?posts=createForm" type="button" class="btn btn-primary">Add a Post</a>
 </div>
 <?php foreach ($posts as $post): ?>

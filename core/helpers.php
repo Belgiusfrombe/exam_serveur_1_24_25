@@ -26,3 +26,12 @@ function slugify(string $string): string
     // Return result
     return $string;
 }
+
+function truncateText($text, $length = 150) {
+    if (strlen($text) > $length) {
+        return substr($text, 0, $length) . '...';
+    } else {
+        return $text;
+    }
+}
+

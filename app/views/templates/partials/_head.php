@@ -10,7 +10,7 @@
     <meta name="copyright" content="company name" />
     <meta name="robots" content="index,follow" />
 
-    <title>DevBlog - Personal Blog Template</title>
+    <title> DevBlog - Personal Blog Template</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon/favicon.ico" />
@@ -24,8 +24,12 @@
     <!-- All CSS Plugins -->
     <link rel="stylesheet" type="text/css" href="../public/css/plugin.css" />
 
+    <link rel="stylesheet" type="text/css" href="../public/css/bootstrap.min.css" />
+
     <!-- Main CSS Stylesheet -->
     <link rel="stylesheet" type="text/css" href="../public/css/style.css" />
+
+    <link rel="stylesheet" type="text/css" href="../public/css/responsive.css" />
 
     <!-- Google Web Fonts  -->
     <link

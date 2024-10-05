@@ -42,12 +42,12 @@
 
                     <!-- Post Buttons -->
                     <div>
-                        <a href="form.html" type="button" class="btn btn-primary">Edit Post</a>
-                        <a href="#" type="button" class="btn btn-secondary" role="button">Delete Post</a>
+
+                        <a href="/posts/<?php echo $post['id']; ?>/edit" class="btn btn-primary">Edit</a>
+                        <a href="/posts/<?php echo $post['id']; ?>/delete" class="btn btn-primary btn-danger">Delete</a>
                     </div>
                     <!-- Post Buttons End -->
                 </div>
             </div>
-        </div>
 <!-- Footer End -->
 </div>

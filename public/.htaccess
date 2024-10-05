@@ -5,16 +5,53 @@ RewriteEngine on
 # ROUTES
 #--------------------------------------------------
 
-# POSTS.SHOW
-# PATTERN: /posts/{id}/{slug}
-# URL: index.php?posts=show&id=xxx
-RewriteRule ^posts/([0-9]+)/([a-zA-Z0-9_-]+)$ index.php?posts=show&id=$1 [L]
+	# ROUTE DU DETAIL D'UN POST
+			# PATTERN: /posts/id/slug-du-post.html
+			# URL: index.php?posts=show&id=xxx
+			# CTRL: ???
+			# ACTION: ???
+			# TITLE: Alex Parker - Title du post
+        RewriteRule ^posts\/([1-9][0-9]*)\/[a-z\-]+$ index.php?posts=show&id=$1 [L]
 
-# POSTS.SHOW
-# PATTERN: /posts/{id}/{slug}
-# URL: index.php?posts=show&id=xxx
+	# ROUTE D'AJOUT D'UN POST: affichage du formulaire
+			# PATTERN: /posts/add/form.html
+			# CTRL: ???
+			# ACTION: ???
+			# TITLE: Alex Parker - Add a post
+        RewriteRule ^posts\/add\/form.html index.php?posts=add [L]
+
+	# ROUTE D'AJOUT D'UN POST: INSERT
+			# PATTERN: /posts/add/insert.html
+			# CTRL: ???
+			# ACTION: ???
+			# PAS DE TITLE CAR REDIRECTION VERS LA PAGE D'ACCUEIL
+        RewriteRule ^posts\/add\/insert.html index.php?posts=insert [L]
+
+	# ROUTE DE MODIFICATION D'UN POST: Affichage du formulaire
+			# PATTERN: /posts/id/slug-du-post/edit/form.html
+			# CTRL: ???
+			# ACTION: ???
+			# TITLE: Alex Parker - Edit a post
+        RewriteRule ^posts\/([1-9][0-9]*)\/[a-z\-]+\/edit\/form.html index.php?posts=edit&id=$1 [L]
+
+	# ROUTE DE MODIFICATION D'UN POST: UPDATE
+			# PATTERN: /posts/id/slug-du-post/edit/update.html
+			# CTRL: ???
+			# ACTION: ???
+			# PAS DE TITLE CAR REDIRECTION VERS LA PAGE DE DETAILS DU # POST
+			RewriteRule ^posts\/([1-9][0-9]*)\/[a-z\-]+\/edit$ index.php?posts=editForm&id=$1 [L]
+
+
+
+	# ROUTE DE SUPPRESSION D'UN POST:
+			# PATTERN: /posts/id/slug-du-post/delete.html
+			# CTRL: ???
+			# ACTION: ???
+			# PAS DE TITLE CAR REDIRECTION VERS LA PAGE D'ACCUEIL
+        RewriteRule ^posts\/([1-9][0-9]*)\/[a-z\-]+\/delete.html index.php?posts=delete&id=$1 [L]
 
 # -------------------
 
 RewriteCond %{REQUEST_URI} !\.(js|css|jpg|gif|zip|png|pdf)$ [NC]
 RewriteRule ^(.*)$ index.php [L]
+
