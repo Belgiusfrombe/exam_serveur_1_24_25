@@ -1,7 +1,7 @@
 <div class="about-fixed">
               <div class="my-pic">
                 <a href="index.html"
-                  ><img src="images/pic/my-pic.png" alt=""
+                  ><img src="https://picsum.photos/270/219" alt=""
                 /></a>
                 <nav id="menu">
                   <ul class="menu-link">
@@ -9,7 +9,8 @@
                   </ul>
                 </nav>
                 <ul class="menu-link">
-                  <?php echo $contentCategories; ?>
+                <?php include "../app/views/categories/_index.php"; ?>
+
                 </ul>
               </div>
 
@@ -21,22 +22,22 @@
 
                 <ul class="social-icon">
                   <li>
-                    <a href="#" target="_blank" class="facebook"
+                    <a href="index.html" target="_blank" class="facebook"
                       ><i class="fa fa-facebook"></i
                     ></a>
                   </li>
                   <li>
-                    <a href="#" target="_blank" class="twitter"
+                    <a href="index.html" target="_blank" class="twitter"
                       ><i class="fa fa-twitter"></i
                     ></a>
                   </li>
                   <li>
-                    <a href="#" target="_blank" class="linkedin"
+                    <a href="index.html" target="_blank" class="linkedin"
                       ><i class="fa fa-linkedin"></i
                     ></a>
                   </li>
                   <li>
-                    <a href="#" target="_blank" class="github"
+                    <a href="index.html" target="_blank" class="github"
                       ><i class="fa fa-github"></i
                     ></a>
                   </li>

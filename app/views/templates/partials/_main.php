@@ -1,5 +1,4 @@
-<div class="container">
-        <div class="row">
+<div class="row">
           <!-- About Me (Left Sidebar) Start -->
           <div class="col-md-3">
           <?php include "../app/views/templates/partials/_aside.php"; ?>
@@ -11,9 +10,21 @@
             <div class="col-md-12 page-body">
               <div class="row">
                 <div class="col-md-12 content-page">
-                  <?php echo $content; ?>
+                  <!-- ADD A POST -->
+
+                  <!-- ADD A POST END -->
+
+                  <!-- Blog Post Start -->
+                    <?php echo $content; ?>
+                  <!-- Blog Post End -->
+
+
+
                 </div>
               </div>
+              <nav aria-label="Page navigation example" style="text-align: center;">
+                  <?php include "../app/views/templates/partials/_nav.php"; ?>
+                  </nav>
             </div>
 
             <!-- Footer Start -->
@@ -26,4 +37,3 @@
           </div>
           <!-- Blog Post (Right Sidebar) End -->
         </div>
-      </div>

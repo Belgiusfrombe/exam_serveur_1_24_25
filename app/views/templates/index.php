@@ -5,16 +5,27 @@
   </head>
 
   <body>
-  <?php include "../app/views/templates/partials/_preloader.php"; ?>
+    <!-- Preloader Start -->
+    <div class="preloader">
+      <div class="rounder"></div>
+    </div>
+    <!-- Preloader End -->
 
     <div id="main">
-    <?php include "../app/views/templates/partials/_main.php"; ?>
+      <div class="container">
+      <?php include "../app/views/templates/partials/_main.php"; ?>
+      </div>
     </div>
 
     <!-- Back to Top Start -->
     <a href="#" class="scroll-to-top"><i class="fa fa-long-arrow-up"></i></a>
     <!-- Back to Top End -->
 
-    <?php include "../app/views/templates/partials/_script.php"; ?>
+    <!-- All Javascript Plugins  -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/plugin.js"></script>
+
+    <!-- Main Javascript File  -->
+    <script type="text/javascript" src="js/scripts.js"></script>
   </body>
 </html>

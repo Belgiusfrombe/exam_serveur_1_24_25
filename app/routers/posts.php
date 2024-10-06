@@ -8,24 +8,22 @@ switch ($_GET['posts']):
     case 'show':
         PostsController\showAction($connexion, $_GET['id']);
         break;
-    case 'createForm':
-        PostsController\createFormAction($connexion);
+    case 'addForm':
+        PostsController\addFormAction($connexion);
         break;
-    case 'insertForm':
-        PostsController\insertFormAction($connexion, [
-        'title' => $_POST['title'],
-        'text' => $_POST['text'],
-        'category_id' => $_POST['category_id'],
-        'created_at' => date('Y-m-d H:i:s'),
-    ]);
+    case 'add':
+            PostsController\addAction($connexion,$_POST);
+        break;
+    case 'editForm':
+            PostsController\editFormAction($connexion, $_GET['id']);
+        break;
+    case 'update':
+            PostsController\updateAction($connexion, $_GET['id'], $_POST);
         break;
     case 'delete':
-            PostsController\deleteAction($connexion, $_GET['id']);
-            break;
-    case 'editForm':
-        PostsController\editFormAction($connexion, $_GET['id']);
+            PostsController\deleteAction($connexion, $_GET['id'], $_POST);
         break;
+
     default:
         PostsController\indexAction($connexion);
-        break;
 endswitch;
