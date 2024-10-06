@@ -10,16 +10,9 @@
             <div class="col-md-12 page-body">
               <div class="row">
                 <div class="col-md-12 content-page">
-                  <!-- ADD A POST -->
-
-                  <!-- ADD A POST END -->
-
-                  <!-- Blog Post Start -->
+                  <!-- Zone dynamique -->
                     <?php echo $content; ?>
-                  <!-- Blog Post End -->
-
-
-
+                  <!-- Zone dynamique -->
                 </div>
               </div>
               <nav aria-label="Page navigation example" style="text-align: center;">

@@ -1,9 +1,4 @@
 <div class="col-md-12 blog-post row">
-                  <div>
-                    <a href="posts/add/form.html" type="button" class="btn btn-primary"
-                      >Add a Post</a
-                    >
-                  </div>
     <?php foreach ($posts as $post): ?>
                     <div class="post-title">
                       <a href="posts/<?php echo $post['id']; ?>/<?php echo \Core\Helpers\slugify($post['title']); ?>.html"

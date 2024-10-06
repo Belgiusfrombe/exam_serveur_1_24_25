@@ -18,6 +18,11 @@
                 <div class="white-spacing">
                   <h1>Alex Parker</h1>
                   <span>Web Developer</span>
+                  <div>
+                    <a href="posts/add/form.html" type="button" class="btn btn-primary" style="margin-top: 10px;">
+                      Add a Post</a
+                    >
+                  </div>
                 </div>
 
                 <ul class="social-icon">
